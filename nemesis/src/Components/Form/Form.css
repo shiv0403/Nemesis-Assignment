@@ -1,0 +1,13 @@
+.formData-btn {
+  width: 100%;
+}
+
+.formData-error {
+  margin-top: -10px;
+  color: red;
+}
+
+.formData-popup {
+  color: #02b402;
+  font-weight: bold;
+}

@@ -1,0 +1,8 @@
+.home {
+  width: 55%;
+  margin: 100px auto;
+}
+
+.nav-item:hover {
+  cursor: pointer;
+}
