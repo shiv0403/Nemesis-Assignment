@@ -5,13 +5,11 @@ const { isEmail } = require("validator");
 const dataSchema = new Schema({
   username: {
     type: String,
-    unique: true,
     required: [true, "Please enter a username"],
   },
   email: {
     type: String,
     required: [true, "Please enter an email address"],
-    unique: true,
     lowercase: true,
     validate: [isEmail, "Enter a valid email address"],
   },
