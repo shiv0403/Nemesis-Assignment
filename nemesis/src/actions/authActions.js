@@ -42,7 +42,7 @@ export const login = (data) => {
       .then((res) => {
         const token = res.data;
         localStorage.setItem("token", token);
-        window.location = "http://localhost:3000";
+        window.location = "https://nemesisassignment.herokuapp.com/";
         dispatch(signupLoginSuccess(token));
       })
       .catch((err) => {
