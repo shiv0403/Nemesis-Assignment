@@ -44,9 +44,9 @@ app.use("*", checkUser);
 app.use("/api/auth", authRoutes);
 app.use("/api/data", dataRoutes);
 
-app.get("/", (req, res) => {
-  res.status(200).send("<h1>This is home route</h1>");
-});
+// app.get("/", (req, res) => {
+//   res.status(200).send("<h1>This is home route</h1>");
+// });
 
 if (process.env.NODE_ENV === "production") {
   app.use(express.static("nemesis/build"));
